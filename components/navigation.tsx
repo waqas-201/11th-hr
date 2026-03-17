@@ -3,18 +3,16 @@
 import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { ChevronDown, Menu, X } from 'lucide-react'
+import { Logo } from './Logo'
 
 export function Navigation() {
-  const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  // Handle scroll effect for nav background - memoized
   const handleScroll = useCallback(() => {
     setIsScrolled(window.scrollY > 50)
   }, [])
 
-  // Handle scroll effect for nav background
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -22,18 +20,14 @@ export function Navigation() {
 
   const navItems = [
     { label: 'Home', href: '#' },
-    { label: 'Why Eleventh-Hour', href: '#' },
+    { label: 'Why 11th', href: '#' },
     { label: 'Portfolio', href: '#' },
     { label: 'Contact Us', href: '#' },
   ]
 
-
-
-
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-3 py-3 transition-all duration-300">
-      <div className="mx-auto w-full md:w-3/4 md:ml-auto md:mr-auto lg:w-3/4">
+      <div className="mx-auto w-full md:w-[90%] lg:w-3/4">
         {/* Glass morphism background container */}
         <div
           className={`relative rounded-lg border transition-all duration-300 px-4 py-3 backdrop-blur-2xl md:px-6 ${isScrolled
@@ -41,38 +35,31 @@ export function Navigation() {
             : 'border-white/10 bg-white/5'
             }`}
         >
-          {/* Content wrapper */}
-          <div className="flex items-center justify-between gap-8">
-            {/* Logo with animation */}
-            <Link href="#" className="flex-shrink-0 group">
-              <div className="flex items-center gap-2 transition-all duration-300">
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/50">
-                  <span className="text-xs font-bold text-primary-foreground">p</span>
-                </div>
-                <span className="text-lg font-bold text-white transition-all duration-300 group-hover:text-primary">
-                  pico
-                </span>
-              </div>
-            </Link>
+          {/* Content wrapper - Fixed Layout */}
+          <div className="flex items-center justify-between">
 
-            {/* Center Navigation Items */}
-            <div className="hidden flex-1  items-center justify-center gap-16 md:flex">
+            {/* 1. LEFT: Logo Wrapper (Takes equal space to balance the right side) */}
+            <div className="flex flex-1 justify-start">
+              <Link href="#" className="flex-shrink-0 transition-transform duration-300 hover:scale-105">
+                <Logo />
+              </Link>
+            </div>
+
+            {/* 2. CENTER: Navigation Items */}
+            <div className="hidden items-center justify-center gap-6 lg:gap-12 md:flex">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className=" font-medium  tracking-widest text-lg  text-white transition-colors duration-300 hover:text-white/50"
+                  className="font-medium tracking-wide text-sm lg:text-base text-white transition-colors duration-300 hover:text-white/50 whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
               ))}
             </div>
 
-            {/* Language Selector and Mobile Menu */}
-            <div className="flex items-center gap-2 md:gap-4">
-
-
-              {/* Mobile Menu Button */}
+            {/* 3. RIGHT: Mobile Menu / Extras (Takes equal space to balance the left side) */}
+            <div className="flex flex-1 items-center justify-end gap-2 md:gap-4">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="md:hidden p-2 rounded-full hover:bg-white/10 transition-all duration-300 text-white/80 hover:text-white"
@@ -85,9 +72,10 @@ export function Navigation() {
                 )}
               </button>
             </div>
+
           </div>
 
-          {/* Mobile Menu */}
+          {/* Mobile Menu Dropdown */}
           {isMobileMenuOpen && (
             <div className="md:hidden mt-4 pt-4 border-t border-white/10 animate-slide-down">
               <div className="flex flex-col gap-3">

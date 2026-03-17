@@ -58,7 +58,7 @@ export default function WeArePico() {
         </h1>
 
         {/* Description - lighter weight, larger, spacious line height */}
-        <p className="mx-auto   text-center font-medium text-white/90 text-[20px] md:text-[28px] leading-[1.6]  mb-24 md:mb-32">
+        <p className="mx-auto   text-center font-medium text-white text-[22px] md:text-[30px] leading-[1.6]  mb-24 md:mb-32">
           We are a global communications and brand activation agency with offices in 36 cities,
           blending local expertise with worldwide vision. For over 50 years, we've delivered
           human authenticity in action, creating impactful brand experiences by actively
@@ -86,7 +86,7 @@ export default function WeArePico() {
                       {service.title}
                     </span>
 
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white/50 text-white/60 transition-colors group-hover:border-white/80 group-hover:text-white/80">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white/80 text-white/60 transition-colors group-hover:border-white/80 group-hover:text-white/80">
                       {isOpen ? <Minus size={14} /> : <Plus size={14} />}
                     </span>
                   </button>
@@ -96,7 +96,7 @@ export default function WeArePico() {
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-32 mt-4 opacity-100' : 'max-h-0 opacity-0'
                       }`}
                   >
-                    <p className="text-white/50 text-[15px] leading-relaxed font-light">
+                    <p className="text-white text-[18px] leading-relaxed font-light">
                       {service.description}
                     </p>
                   </div>
@@ -130,7 +130,7 @@ export default function WeArePico() {
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-32 mt-4 opacity-100' : 'max-h-0 opacity-0'
                       }`}
                   >
-                    <p className="text-white/60 text-[15px] leading-relaxed font-light">
+                    <p className="text-white text-[18px] leading-relaxed font-light">
                       {service.description}
                     </p>
                   </div>

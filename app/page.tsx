@@ -3,7 +3,6 @@ import { Footer } from '@/components/footer'
 import WeArePico from '@/components/we-are-pico'
 import { ContactCTA } from '@/components/contact-cta'
 import WorksSlider from '@/components/works-slider'
-import SustainabilityHero from '@/components/Sustainatibilit'
 import AwardsMarquee from '@/components/Awards'
 import { WhyChooseUs } from '@/components/WhyChooseUs'
 

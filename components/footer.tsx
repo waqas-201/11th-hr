@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { Linkedin, Facebook, Twitter, Instagram, Paintbrush as Pinterest, Youtube, ArrowUp } from 'lucide-react'
+import { Logo } from './Logo'
 
 export function Footer() {
   const scrollToTop = () => {
@@ -26,10 +27,7 @@ export function Footer() {
           <div className="flex flex-col gap-4 max-w-2xl">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/30">
-                <span className="text-sm font-bold text-white">p</span>
-              </div>
-              <span className="text-2xl font-bold text-white">pico</span>
+              <Logo />
             </div>
 
             {/* Description */}
