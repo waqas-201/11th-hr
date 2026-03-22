@@ -56,7 +56,7 @@ export function Footer() {
         {/* Copyright and Back to Top */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-6">
           <p className="text-sm text-white/80">
-            © Copyright 2026 Pico Global Services Ltd. All Rights Reserved. | 京ICP备13035935号—2
+            © Copyright 2026 11th Hour. All Rights Reserved.
           </p>
 
           {/* Back to Top Button */}
