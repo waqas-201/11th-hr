@@ -16,15 +16,15 @@ type Feature = {
 
 const features: Feature[] = [
     {
-        title: 'Senior-level execution',
+        title: 'Highly Experienced Team',
         description:
-            'No juniors, no guesswork. Just clean, predictable delivery.',
+            'Our highly experienced team brings expertise, creativity, and professionalism to deliver exceptional results in every project',
         icon: <Sparkles className="h-5 w-5" />,
     },
     {
-        title: 'Design-driven engineering',
+        title: 'Wow Customer Service',
         description:
-            'UI and code evolve together — not stitched later.',
+            'We deliver wow customer service by going beyond expectations and creating a smooth, memorable experience for every client.',
         icon: <Layers className="h-5 w-5" />,
     },
     {
@@ -46,9 +46,9 @@ const features: Feature[] = [
         icon: <MessageSquare className="h-5 w-5" />,
     },
     {
-        title: 'Built to scale',
+        title: 'Cost Effective',
         description:
-            'Systems that grow with your product, not against it.',
+            'We provide cost-effective solutions without compromising on quality, ensuring maximum value for your investment.',
         icon: <TrendingUp className="h-5 w-5" />,
     },
 ]
@@ -60,11 +60,11 @@ export function WhyChooseUs() {
                 {/* Section Heading */}
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-balance">
-                        Why teams choose us
+                        Why Choose 11th Hour
                     </h2>
                     <p className="mt-4 text-lg text-muted-foreground">
-                        Built by engineers. Refined for real users.
-                        Designed to scale without friction.
+                        Event Management involves on research the band & identify the target audience, 
+                        creating an event concept, coordinating the technical aspects before starting the event.
                     </p>
                 </div>
 
