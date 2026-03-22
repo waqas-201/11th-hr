@@ -15,14 +15,14 @@ const services: ServiceItem[] = [
       'We create immersive brand experiences that connect emotionally with audiences through innovative activations and strategic partnerships.',
   },
   {
-    title: 'Communications Strategy',
+    title: 'Activation',
     description:
-      'Develop comprehensive communication strategies that align your brand message with your target audience and business objectives.',
+      'At 11th Hour, we believe true brand activation begins with purpose. As a trusted brand activation agency in Pakistan, we go beyond visibility to create experiences that carry meaning and intention.',
   },
   {
-    title: 'Brand Strategy',
+    title: 'Cultural Events',
     description:
-      'Build strong brand foundations with our strategic approach to positioning, messaging, and market differentiation.',
+      'At 11th Hour, local art performances represent the soul of Cultural Events & Experiences in Pakistan, bringing creativity, emotion, and authentic expression to life. We highlight local talent through music, dance, theater, and live artistic acts that reflect the Country’s rich and diverse cultural spirit. Each performance tells a story, creating moments that feel personal, powerful, and deeply human.',
   },
   {
     title: 'Creativity & Design',
@@ -30,14 +30,14 @@ const services: ServiceItem[] = [
       'Transform your vision into stunning visual and creative executions that captivate and engage your audience.',
   },
   {
-    title: 'Data & Technology',
+    title: 'Custom Exhibition Booths',
     description:
-      'Leverage cutting-edge technology and data insights to create smart, measurable, and impactful brand experiences.',
+      'At 11th Hour, we see exhibition booths as more than just structures. They are powerful brand spaces where first impressions are formed, and lasting connections begin. Every booth is an opportunity to tell your story, attract attention, and invite people into your world. That is why printing and branding play such a vital role in how your space is experienced.',
   },
   {
-    title: 'CRM & Loyalty',
+    title: 'Fabrication & Setup',
     description:
-      'Build lasting customer relationships through strategic CRM initiatives and loyalty programs that drive retention and growth.',
+      'Build Importance of Fabrication in Any Event: Fabrication is basically an outstanding blend of lights and fabric to give an event a spellbind visual effect. Fabrics can give your event space a touch of magnificence, layer, depth, vivid texture, and vibrant colors. Reflecting light off different fabrics really makes all the difference.  A dash of bright colored lights brings us to the next point.',
   },
 ]
 
@@ -52,17 +52,19 @@ export default function WeArePico() {
     <section className="bg-black text-white py-24 md:py-32 ">
       <div className="mx-auto max-w-[1200px] px-6 md:px-12  ">
 
-        {/* Heading - "We are" in teal, "Pico." in white, serif font */}
+        {/* Heading - "We are" in teal, "11TH HOUR." in white, serif font */}
         <h1 className="text-center text-[42px] md:text-[64px] lg:text-[72px] font-normal tracking-tight mb-12 font-serif">
           <span className="text-[#00d4c8]">We are Pico.</span>
         </h1>
 
         {/* Description - lighter weight, larger, spacious line height */}
         <p className="mx-auto   text-center font-medium text-white text-[22px] md:text-[30px] leading-[1.6]  mb-24 md:mb-32">
-          We are a global communications and brand activation agency with offices in 36 cities,
-          blending local expertise with worldwide vision. For over 50 years, we've delivered
-          human authenticity in action, creating impactful brand experiences by actively
-          connecting with audiences and sparking real emotions.
+         At 11th Hour, we turn ideas into unforgettable experiences. We believe every event tells a story, and our goal is to make that story meaningful, engaging, and memorable.
+         We specialize in creating events that connect people and leave a lasting impression. Whether it’s a corporate event, conference, award ceremony, product launch, or team-building activity, we focus on delivering everything with creativity and precision.
+         With strong experience and a passion for excellence, we have built our reputation on quality, creativity, and attention to detail. We understand that great events don’t happen by chance — they are carefully planned and perfectly executed.
+         Every event begins with a vision. Our team works closely with clients to bring that vision to life through thoughtful planning, smart design, and smooth coordination.
+         From concept to completion, we manage everything — including venue selection, décor, entertainment, and overall execution — so you can enjoy a seamless and stress-free experience.
+         At 11th Hour, we don’t just organize events — we create moments that people remember.
         </p>
 
         
