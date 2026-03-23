@@ -38,10 +38,10 @@ export function HeroCarousel() {
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4">
         <div className="max-w-4xl w-full text-center animate-slide-up">
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-white uppercase tracking-tighter mb-6 drop-shadow-2xl leading-[1.1]">
-            Full-Scale <br className="hidden md:block" /> Marketing Agency
+            Full Scale <br className="hidden md:block" /> Marketing Agency
           </h1>
           <p className="text-lg md:text-2xl text-gray-200 mb-10 drop-shadow-md font-medium max-w-2xl mx-auto">
-            Event Management, Corporate Gifts & Digital Marketing
+            Event Management, BTL Activations & Corporate Gifts
           </p>
           <div className="flex justify-center">
             <button className="bg-primary text-primary-foreground hover:scale-105 transition-transform duration-300 px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm md:text-base shadow-[0_0_20px_rgba(0,0,0,0.3)]">
